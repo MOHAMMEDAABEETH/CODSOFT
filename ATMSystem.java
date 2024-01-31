@@ -1,5 +1,11 @@
 import java.util.Scanner.*;
-class ATM
+interface I
+    {
+        public void withdraw();
+        public void deposit();
+    }
+        
+class ATM implements I
     {
         public double amount = 20000.0;
         public void withdraw(double amount)
